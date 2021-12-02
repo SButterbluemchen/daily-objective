@@ -5,7 +5,7 @@
 ### Mercredi 01/12/2021
 
 
-* [ ] Découverte du Terminal : 
+* x Découverte du Terminal : 
   * [x] Comprendre la différence entre une interface en ligne de commande et une interface graphique
   * [x] Savoir ce qu'est un Shell, quelle différence entre BASH et ZSH 
   * [x] Comprendre comment fonctionne un shell
