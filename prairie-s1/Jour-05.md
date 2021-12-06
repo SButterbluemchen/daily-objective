@@ -7,7 +7,7 @@
 
 * [x] Créer son premier repo Github
 * [x] Faire ses première manipulations de versionning (init, push, add, commit, status, pull)
-* [ ] Découverte du Markdown : 
+* [x] Découverte du Markdown : 
   * [x] Comprendre l'intérêt du Markdown
   * [x] Découvrir les balises de bases : 
     * [x] Titres
@@ -23,7 +23,7 @@
 * [x] Découverte des raccourcis clavier de son système (Windows, Linux, Mac) : 
   * [x] Navigateur (fenêtres, onglets, navigation, etc …)
   * [x] Terminal (fenêtres, onglets, commandes)
-* [ ] Commencer la rédaction en Markdown de ses cheat sheets dans un repo créé pour l'occasion
+* [x] Commencer la rédaction en Markdown de ses cheat sheets dans un repo créé pour l'occasion
 
 
 
