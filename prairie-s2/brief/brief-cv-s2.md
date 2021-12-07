@@ -30,7 +30,7 @@ Cette page devra recenser une rubrique pour vos informations personnelles (atten
 
 ## Modalités pédagogiques
 
-Livraison avant Dimanche 28 Novembre 2021 à Minuit sur Github.
+Livraison avant Dimanche 12 Décembre 2021 à Minuit sur Github.
 Travail en individuel.
 
 
