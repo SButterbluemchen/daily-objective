@@ -1,0 +1,54 @@
+/* Exercise 1 */
+/* Ouvrez "exercise1.html" sur un navigateur puis modifiez la position de la navigation pour qu'elle suive l'écran lors du défilement  */
+
+nav {
+  width: 100%;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  /* position ?  */
+
+}
+
+/* Exercise 2 */
+/* Ouvrez "exercise2.html" puis découvrez comment centrer parfaitement la div ".square" dans ".box". (sur X et Y) */
+
+.box {
+
+}
+
+.square {
+  background: violet;
+}
+
+
+/* Exercise 3 */
+/* Il faut placer ce qu'on appelle des "boutons flottants".
+C'est-à-dire des boutons qui vont flotter à un point donné.
+Placez donc ces quatre boutons en fonction du texte qu'ils contiennent.
+Utilisez un décalage de "15px" à chaque fois, afin qu'ils ne collent pas aux bords.
+*/
+
+.floating-btn {
+
+}
+.b1 {
+
+}
+.b2 {
+
+}
+.b3 {
+
+}
+.b4 {
+
+}
+
+/* exercise 4 */
+/* Essayez de décaler la div ".home-content" de 100px à partir du haut tout en restant dans le flux du document. */
+
+.home-content {
+
+}

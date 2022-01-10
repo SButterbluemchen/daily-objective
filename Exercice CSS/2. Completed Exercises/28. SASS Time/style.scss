@@ -1,0 +1,123 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+// 1. Create a palette of 5 variables that represent different shades of blue in hexadecimal
+
+$primary-blue: #00308f;
+$light-blue: #7cb9e8;
+$light-shady-blue: #72a0c1;
+$navy-blue: #002d62;
+$green-blue: #5f9ea0;
+
+// 2. Use SASS nesting to nest the following selectors
+
+.container {
+  background: #00308f;
+  color: #f1f1f1;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 900px;
+  margin: 20px auto 0;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      background: lightblue;
+      color: #f1f1f1;
+    }
+  }
+}
+
+// 3. Share the following three properties with h2, h3 & h4.
+//     font-size: 45px;
+//     text-align: center;
+//     padding: 12px 0;
+
+// The result in style.css should look like this:
+// h2, h3, h4 {
+//     font-size: 45px;
+//     text-align: center;
+//     padding: 12px 0;
+//   }
+
+%title {
+  font-size: 45px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+h2 {
+  color: crimson;
+  @extend %title;
+}
+h3 {
+  color: lightgreen;
+  @extend %title;
+}
+h4 {
+  color: lightblue;
+  @extend %title;
+}
+
+// 4. Create a mixin with parameters to avoid repetitions.
+// Selectors must not have their own properties, everything must be included in the mixin and its parameters.
+
+@mixin inputs($padding, $fontSize, $maxWidth) {
+  display: block;
+  padding: $padding;
+  font-size: $fontSize;
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 50px auto;
+}
+
+.inp-large {
+  @include inputs(24px, 20px, 800px);
+}
+
+.inp-small {
+  @include inputs(16px, 14px, 250px);
+}
+
+// 5. Use a loop to add 1px height and width to the 100 blocks incrementally (b1, b2, b3 etc ...).
+// 1px 1px
+// 2px 2px
+
+.blocks-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block {
+  border: 10px solid rgb(43, 220, 20);
+  background: #000;
+  margin: 20px;
+}
+
+
+@for $i from 1 through 100 {
+  .b#{$i}{
+    width: 1px + $i;
+    height: 1px + $i;
+  }
+}

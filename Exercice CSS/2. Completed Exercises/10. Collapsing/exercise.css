@@ -1,0 +1,45 @@
+/* Find at least 3 ways to fix the margin collapsing problem. */
+
+
+.wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    background: orange;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    background: slateblue;
+   
+}
+  
+
+/* #1 */
+.w1 {
+    border-top: 1px solid transparent;
+}
+.w1 .box {
+    margin-top: 199px;
+}
+
+
+/* #2 */
+.w2 {
+  padding-top: 200px;
+}
+.w2 .box {
+    
+}
+
+
+/* #3 */
+.w3 {
+    display: grid;
+}
+.w3 .box {
+    margin-top: 200px;
+}
+
+
+
