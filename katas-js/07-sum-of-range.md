@@ -18,3 +18,11 @@ console.log(range(5, 2, -1));
 console.log(sum(range(1, 10)));
 // → 55
 ```
+
+let array = [];
+
+function range(arg1, arg2) {
+  array++;
+}
+
+range(1,6);
