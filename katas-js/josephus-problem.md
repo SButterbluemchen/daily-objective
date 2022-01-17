@@ -20,3 +20,12 @@ Which number was he?
 `josephus(6,2)` should return `5`.
 `josephus(7,2)` should return `7`.
 `josephus(8,2)` should return `1`.
+
+function killPrisoner(prisonersTotal, sequence) {
+  const prisonersArray = [prisonersTotal];
+  console.log(prisonersArray);
+}
+
+killPrisoner(7,2);
+
+

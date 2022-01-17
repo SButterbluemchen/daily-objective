@@ -66,24 +66,78 @@
 
 //   console.log(countBs("BoBB"));
 
-// let count = 0;
-// function countChar(arg3, arg4) {
-//   for (let i = 0; i < arg3.length; i++) {
-//     if (arg3[i] == arg4) {
+// function countChar(word, letter) {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
 //       count++;
 //     }
 //   } return count;
 // }
 
-// countChar("LBOOOBBLLLL", "L");
+// console.log(countChar("LBOOOBBLLLL", "L"));
 
 // Solution 7
-let array = [];
-function range(start, end) {
-  for (let i = start; i <= end; start++) {
-    array.push(i);
-  } 
-  return array;
-} 
+// function range(start, end) {
+//   const array = [];
+//   for (let i = start; i <= end; i++) {
+//     array.push(i);
+//   } 
+//   return array;
+// } 
 
-console.log(range(1,6));
+// console.log(range(1,6));
+
+// function sum(numberArray) {
+//   let result = 0;
+//   for (let i = 0; i < numberArray.length; i++) {
+//     result += numberArray[i];
+//   }
+//   return result;
+// }
+// console.log(sum([1,2,3]));
+
+// Solution 8
+// function reverseArray(myArray) {
+//   const newArray = [];
+//   for (let i = myArray.length - 1; i >= 0; i--) {
+//     newArray.push(myArray[i]);
+//   }
+//   return newArray;
+// } 
+// console.log(reverseArray(["A","B","C"]));
+
+// const myArray = ["0","1","2","3","4"];
+// function reverseArrayInPlace() {
+//   for (let i = 0; i <= myArray.length / 2 ; i++) {
+//     const element = myArray[i];
+//     myArray[i] = myArray[myArray.length - 1 - i];
+//     myArray[myArray.length - 1 - i] = element;
+//   }
+// }
+
+// reverseArrayInPlace();
+// console.log(myArray);
+
+// Solution Josephus problem
+function killPrisoner(prisonersTotal, sequence) {
+  const prisonersArray = [];
+  for (let i = 0; i < prisonersTotal; i++) {
+    prisonersArray.push(i);
+  }
+  console.log(`Mon tableau ${prisonersArray}`);
+
+  let toKill = 0;
+
+  while (prisonersArray.length > 1) {
+    toKill = toKill + sequence - 1;
+    if (toKill > prisonersArray.length) {
+      toKill = toKill - prisonersArray.length;
+    }
+    console.log(toKill);
+    prisonersArray.splice(toKill, 1);
+    console.log(`Array after one dead prisoner ${prisonersArray}`);
+  }
+}
+
+killPrisoner(6,2);
